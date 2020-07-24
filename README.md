@@ -26,5 +26,4 @@ Alpha-beta pruning belongs to the **branch and bound** category.
    If current player is our agent, 
    update Q(s,a) = (1-α)Q(s,a) + α[R(s,a) + γ*max(Q(ŝ,â))]
    s = ŝ
-   Switch turn, P = the other player```
-   
+   Switch turn, P = the other player
