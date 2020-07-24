@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:700">
+    <title>Tic-Tac-Toe-Game</title>
+  </head>
+
+  <body>
+    <h1>Tic-Tac-Toe game</h1>
+    <div id="container">
+  		<div id="sidebar_wrap">
+        <div>
+          Wanna play a human vs human game
+          <a href="2player/humanvshuman.html" color="black"> click here</a>
+        </div>
+  			  <div class="field">
+  					<label>Depth</label>
+            <button id="button" class="depth1">1</button>
+            <button id="button" class="depth2">2</button>
+            <button id="button" class="depth3">3</button>
+            <button id="button" class="depth4">4</button>
+            <button id="button" class="depth5">Unlimited</button>
+  				</div>
+          <div id="depthoutput">
+            <p>
+                Level max
+            </p>
+          </div>
+          <div class="field">
+  					<label>Starting Player</label>
+            <button id="button" class="ai">AI</button>
+            <button id="button" class="human">HUMAN</button>
+  				</div>
+          <div id="whostartsfirst">
+            <p>
+             Choose the first player
+            </p>
+          </div>
+          <div id="button-row">
+            <button id="button" class="new-game">New Game</button>
+          </div>
+          <div>
+
+             <a href="https://github.com/prasenjit07/Tic-Tac-Toe-Game.git" >Checkout the source code</a>
+
+          </div>
+
+
+  		</div>
+    <div id="board_wrap">
+      <div class="gif" id="gif-lose">
+        <div class="gif-content">
+          <div class="gif-header">
+            <span class="close">×</span>
+            <h2>Computer Wins!</h2>
+          </div>
+          <div class="gif-body">
+            <div>
+              <img src="images/computer_wins.gif" alt="Computer Wins"/>
+            </div>
+            <div class="gif-footer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="gif" id="gif-draw">
+        <div class="gif-content">
+          <div class="gif-header">
+            <span class="close">×</span>
+            <h2>Draw!</h2>
+          </div>
+          <div class="gif-body">
+            <div>
+            <img src="images/player_draws.gif" alt="Draw game"/>
+            </div>
+          </div>
+          <div class="gif-footer"></div>
+        </div>
+      </div>
+      <div class="gif" id="gif-win">
+        <div class="gif-content">
+          <div class="gif-header">
+            <span class="close">×</span>
+            <h2>You Won!</h2>
+          </div>
+          <div class="gif-body">
+            <div>
+            <img src="images/Youwon.gif" alt="win game"/>
+            </div>
+          </div>
+          <div class="gif-footer"></div>
+        </div>
+      </div>
+
+      <div id="container">
+        <div id="gameboard">
+          <table id="grid">
+            <tr>
+              <td id="cell1" class="cell"></td>
+              <td id="cell2" class="cell"></td>
+              <td id="cell3" class="cell"></td>
+            </tr>
+            <tr>
+              <td id="cell4" class="cell"></td>
+              <td id="cell5" class="cell"></td>
+              <td id="cell6" class="cell"></td>
+            </tr>
+            <tr>
+              <td id="cell7" class="cell"></td>
+              <td id="cell8" class="cell"></td>
+              <td id="cell9" class="cell"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

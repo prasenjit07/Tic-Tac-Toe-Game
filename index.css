@@ -1,0 +1,302 @@
+h1 {
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+}
+
+body {
+  background:white;
+  font-family: cursive;
+  height:100%;
+}
+
+#container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  text-align:center;
+ }
+
+#container #sidebar_wrap {
+    width: 35%;
+    height: 100%;
+    float: left;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background:white;
+    margin-top:10%;
+  }
+  #container #board_wrap {
+    width: 65%;
+    height: 100%;
+    background-size: 300px;
+    float: left;
+    align-items: center;
+    justify-content: center; }
+
+
+
+  #sidebar_wrap .field {
+    margin-bottom: 15px; }
+
+    #sidebar_wrap .field label {
+      font-weight: 600;
+      margin: 0 0 10px 10px;
+      display: block; }
+    #sidebar_wrap #depthoutput {
+      display: inline-block;
+      margin:0 0 10px 10px;
+    }
+
+    #sidebar_wrap a {
+        color: blue;
+        margin: auto;
+        margin-top: 20px;
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+
+      }
+
+
+
+#gameboard {
+  background-image: url(images/lightpaperfibers.png);
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 35px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 85%;
+}
+
+
+#button:hover {
+  cursor: pointer;
+}
+
+/* to prevent blue highlight of elements on click */
+#button:focus {
+  outline:0;
+}
+
+#button {
+  background-color: #ead4b3;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  color: #2a2217;
+  margin: 5px;
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+
+
+.hover-move {
+  color: #aaa;
+  margin: 0;
+  padding: 0;
+}
+
+/* To mark 3 in a row */
+#winning-line {
+  background-color: blue;
+  line-height: 1px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+}
+
+#about-link:hover {
+  text-decoration: underline;
+}
+
+#grid {
+  height: 500px;
+  margin: auto;
+  width: 100%;
+}
+
+#grid td {
+  font-size: 8em;
+  height: 33.33%;
+  padding: 0;
+  text-align: center;
+  width: 33.33%;
+}
+
+#grid td:hover {
+  cursor: pointer;
+}
+
+#cell1,
+#cell2,
+#cell4,
+#cell5,
+#cell7,
+#cell8 {
+  border-right: 1px solid black;
+}
+
+#cell1,
+#cell2,
+#cell3,
+#cell4,
+#cell5,
+#cell6 {
+  border-bottom: 1px solid black;
+}
+
+
+
+.gif {
+  background-color: rgba(0,0,0,0.9);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.gif p,table {
+  color: #333;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.25;
+  margin-top: 15px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@-webkit-keyframes animatetop {
+
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 100px;
+    opacity: 1;
+   }
+}
+
+.gif-content {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-name: animatetop;
+  -webkit-animation-name: animatetop;
+  background-color: #fefefe;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  border: 1px solid #888;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  top: 100px;
+  width: 50%;
+}
+
+.gif-body img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.gif-header {
+  background-color: #fff;
+  border-bottom: 1px solid #bbb;
+  padding: 2px 16px;
+}
+
+.gif-header h2 {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  padding-bottom: 0.5em;
+  padding-top: 0.8em;
+  text-align: center;
+}
+
+.gif-body {
+  padding: 1em;
+}
+
+.btn-choice {
+  font-size: 4em;
+  height: 100px;
+  margin: 0 0.3em 0 0.3em;
+  width: 50%;
+}
+
+
+
+.gif-body a {
+  color:#337ab7;
+  text-decoration: none;
+}
+
+.gif-body a:visited {
+  color:#337ab7;
+  text-decoration: none;
+}
+
+.gif-body a:hover {
+  color:#337ab7;
+  text-decoration: underline;
+}
+
+.table-stats {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+  padding: 0;
+  width: 100%;
+}
+
+.table-stats tr th {
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.table-stats tr td {
+  border: 1px solid black;
+  padding: 0.5em;
+}
+
+.gif-footer {
+  background-color: #ccc;
+  height: 0.25em;
+}
+#sourcecode{
+  margin-top: 10px;
+}
