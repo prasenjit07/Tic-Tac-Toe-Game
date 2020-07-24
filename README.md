@@ -18,8 +18,8 @@ Alpha-beta pruning belongs to the **branch and bound** category.
 * Predicting next move feature - Using **Q-Learning** algorithm agent can be taught how to play the Tic Tac Toe game.
 * **Training phase** can be described by the pseudocode of Q-learning algorithm
 ```-Initialise: Q(s,a) = 0, starting state s, 
-            starting player P, iterations N
-for t = 0 : N
+   starting player P, iterations N
+   for t = 0 : N
    With probability ε : P picks random action a
    Else, pick action a that maximise Q(s,a)
    Observe new state ŝ and reward R(s,a)
